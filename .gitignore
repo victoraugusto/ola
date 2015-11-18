@@ -1,1 +1,30 @@
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<windows.h>
+int main (){
+    float t=0.,s=0.,e=0,d=0.,caramujo=0.,n=0;
+    printf("digite o tamanho do poste: \n");
+    scanf("%f",& t);
+    printf("digite quanto o caramujo sobe por dia : \n");
+    scanf("%f",& s);
+    printf("digite quanto o caramujo escorrega a noite: \n");
+    scanf("%f",& e);
+    if(e>=s){
+             printf("o caramujo nuca chegara ao topo");
+             }else{
+                   while(caramujo<t){
+                                     caramujo=caramujo+s;
+                                     d++;
+                                     while(n<d && caramujo<t){
+                                               caramujo=caramujo-e;
+                                               n++;
+                                               }
+                                     }
+                                     printf("\n o caramujo demorou %.0f dias e %.0f noites para subir o poste \n",d,n);
+                                     }
+    
+system ("pause");
+return 0;
+}
